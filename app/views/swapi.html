@@ -1,0 +1,53 @@
+<p>swapi view</p>
+<div ng-controller="SwApi as ctrl">
+    <form class="form-horizontal">
+        <div class="form-group row">
+            <select class="form-control col-sm-5" ng-model="selectedShip" ng-change="selectedShipChanged()" ng-options="ship.name1 for ship in ships">
+        </select>
+            <div class="col-sm-2"></div>
+            <select class="form-control col-sm-5" ng-model="selectedShip2" ng-change="selectedShipChanged2()" ng-options="ship.name1 for ship in ships">
+        </select>
+        </div>
+    </form>
+    <div class="row">
+        <div class="col-sm-12">
+            <table class="table table-striped">
+                <thead class="thead-inverse">
+                    Star Wars ship selected
+                </thead>
+                <tr>
+                    <th>#</th>
+                    <th> Starship1</th>
+                    <th> Starship2</th>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td>{{ctrl.ship1.name}}</td>
+                    <td>{{ctrl.ship2.name}}</td>
+                </tr>
+                <tr>
+                    <td>Cost</td>
+                    <td ng-model="price1" id="p1">{{ctrl.ship1.cost_in_credits}}</td>
+                    <td ng-model="price2" id="p2">{{ctrl.ship2.cost_in_credits}}</td>
+                </tr>
+                <tr>
+                    <td>Speed</td>
+                    <td ng-model="speed1" id="s1">{{ctrl.ship1.max_atmosphering_speed}}</td>
+                    <td ng-model="speed2" id="s2">{{ctrl.ship2.max_atmosphering_speed}}</td>
+                </tr>
+                <tr>
+                    <td>Cargo Size</td>
+                    <td ng-model="cargo1" id="c1">{{ctrl.ship1.cargo_capacity}}</td>
+                    <td ng-model="cargo2" id="c2">{{ctrl.ship2.cargo_capacity}}</td>
+                </tr>
+                <tr>
+                    <td>Passengers</td>
+                    <td ng-model="passengers1" id="pa1">{{ctrl.ship1.passengers}}</td>
+                    <td ng-model="passengers2" id="pa2">{{ctrl.ship2.passengers}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <button class="btn-lg btn-primary btn" ng-click="CompareShips()">Compare ships</button>
+    <p> </p>
+</div>

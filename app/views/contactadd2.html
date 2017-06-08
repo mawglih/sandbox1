@@ -1,0 +1,31 @@
+<h2 ng-if="($ctrl.myLength >0)">{{$ctrl.myTitle}}</h2>
+<div class="row text-center">
+    <span class="error">WARNING! WARNING! Name "oleg" was entered</span>
+</div>
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+        <table class="table table-inversed table-stripped" ng-if="($ctrl.myLength >0)">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th>Country</th>
+                </tr>
+            </thead>
+            <tr ng-repeat="person in $ctrl.myItems">
+                <th scope="row">{{$index+1}}</td>
+                    <td>{{person.firstName}}</td>
+                    <td>{{person.lastName}}</td>
+                    <td>{{person.phone}}</td>
+                    <td>{{person.email}}</td>
+                    <td>{{person.country}}</td>
+                    <td><button class="btn btn-danger" ng-click="$ctrl.remove($index);">Remove Person</button></td>
+            </tr>
+        </table>
+
+    </div>
+
+</div>

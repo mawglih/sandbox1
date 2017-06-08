@@ -1,0 +1,122 @@
+/* Space out content a bit */
+
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: Verdana;
+}
+
+h1,
+h2,
+h3 {
+    color: darkblue;
+}
+
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+
+.header,
+.footer {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+/* Custom page header */
+
+.header {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+
+/* Make the masthead heading the same height as the navigation */
+
+.header h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+}
+
+
+/* Custom page footer */
+
+.footer {
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+}
+
+
+/* Main marketing message and sign up button */
+
+.jumbotron {
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.my-img-small {
+    max-height: 50px;
+}
+
+.rating-circle,
+.rating-circle1 {
+    height: 2em;
+    width: 2em;
+    border: .1em solid black;
+    border-radius: 1.1em;
+    display: inline-block;
+    margin: 0;
+    padding: .1em;
+}
+
+.rating-circle1 {
+    padding-right: 3px;
+    margin-right: 5px;
+}
+
+.rating-hover,
+.title {
+    background-color: yellow;
+}
+
+.rating-chosen {
+    background-color: green;
+}
+
+.myMargin {
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.warning {
+    color: red;
+    font-style: italic;
+}
+
+.error {
+    color: darkorange;
+    font-style: bold;
+    border: 2px solid darkviolet;
+    border-radius: 10px;
+    display: none;
+}
+
+.myform2 input.ng-invalid.ng-touched {
+    background-color: darkred;
+    color: white;
+}
+
+.myform2 input.ng-valid.ng-touched {
+    background-color: darkgreen;
+    color: white;
+}

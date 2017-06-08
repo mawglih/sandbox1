@@ -1,0 +1,59 @@
+<div ng-controller="ContactCtrl as ctrl">
+    <h1>Some title</h1>
+    <form>
+        <div>
+
+            <div class="form-group row">
+                <div class="col-md-2">
+                    <label for="fName">First Name</label>
+                </div>
+                <div class="col-md-8 offset-md-1">
+                    <input type="text" class="form-control" ng-model="ctrl.itemFirstName" placeholder="Enter first name">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-md-2">
+                    <label for="lName">Last Name</label>
+                </div>
+                <div class="col-md-8 offset-md-1">
+                    <input type="text" class="form-control" ng-model="ctrl.itemLastName" placeholder="Enter last name">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-md-2">
+                    <label for="email">Email</label>
+                </div>
+                <div class="col-md-8 offset-md-1">
+                    <input type="email" class="form-control" ng-model="ctrl.itemEmail" placeholder="Enter email">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-md-2">
+                    <label for="phone">Phone</label>
+                </div>
+                <div class="col-md-8 offset-md-1">
+                    <input type="phone" class="form-control" ng-model="ctrl.itemPhone" placeholder="Enter phone number">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-md-2">
+                    <label for="country">Country</label>
+                </div>
+                <div class="col-md-8 offset-md-1">
+                    <input type="text" class="form-control" ng-model="ctrl.itemCountry" placeholder="Enter your country">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="offset-md-3 col-md-8">
+                    <button ng-click="ctrl.addItem();" class="btn btn-warning">Add Person</button>
+                </div>
+            </div>
+
+    </form>
+    <contact-add id="table1" items="ctrl.items" title="{{ctrl.title}}" titleLength="{{ctrl.titlelength}}" remove="ctrl.removeItem(index)">
+        <div>
+            <div class="title">OH, THE HORROR!</div>
+            <div class="warning">{{ctrl.warning}}</div>
+        </div>
+    </contact-add>
+    </div>

@@ -1,0 +1,127 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+</head>
+
+<body ng-app="fotoAppApp">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <div class="container-fluid">
+        <div class="header">
+            <nav class="navbar navbar-toggleable-md navbar-inverse bg-primary">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" ui-sref="home">Home</a>
+                    <a class="nav-item nav-link" ui-sref="about">About</a>
+                    <a class="nav-item nav-link" ui-sref="conference">Conference</a>
+                    <a class="nav-item nav-link" ui-sref="contact">Contact</a>
+                    <a class="nav-item nav-link" ui-sref="contact2">Contact2</a>
+                    <a class="nav-item nav-link" ui-sref="swapi">Swapi</a>
+                </div>
+            </nav>
+            <h3 class="text-muted">fotoApp</h3>
+        </div>
+    </div>
+
+    <div class="container">
+        <ui-view></ui-view>
+    </div>
+    <div class="footer container-fluid">
+        <p><span class="glyphicon glyphicon-heart"></span>footer</p>
+        <h1>This is footer</h1>
+    </div>
+
+
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-XXXXX-X');
+        ga('send', 'pageview');
+    </script>
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    <!-- build:js(.) scripts/oldieshim.js -->
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.js"></script>
+    <![endif]-->
+    <!-- endbuild -->
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-mocks/angular-mocks.js"></script>
+    <script src="bower_components/angular-scenario/angular-scenario.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="lib/angular-ui-min.js"></script>
+    <script src="scripts/app.js"></script>
+    <!--controllers-->
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/about.js"></script>
+    <script src="scripts/controllers/contact.js"></script>
+    <script src="scripts/controllers/contact2.js"></script>
+    <script src="scripts/controllers/fotofindercontroller.js"></script>
+    <script src="scripts/controllers/fotodisplay.js"></script>
+    <script src="scripts/controllers/conference.js"></script>
+    <script src="scripts/controllers/swapi.js"></script>
+
+    <!--directives-->
+    <script src="scripts/directives/fotofinder.js"></script>
+    <script src="scripts/directives/fotodisplay.js"></script>
+    <script src="scripts/directives/conf1.js"></script>
+    <script src="scripts/directives/contactadd.js"></script>
+    <!--services-->
+    <script src="scripts/service/photolistservice.js"></script>
+    <script src="scripts/service/additem.js"></script>
+    <script src="scripts/service/addPeopleToList.js"></script>
+    <script src="scripts/service/addPeopleToList2.js"></script>
+    <script src="scripts/service/getswapi.js"></script>
+    <!--components-->
+    <script src="scripts/components/questionaire.component.js"></script>
+    <script src="scripts/components/conf2.js"></script>
+    <script src="scripts/components/contactadd2.js"></script>
+
+    <!-- endbuild -->
+</body>
+
+</html>

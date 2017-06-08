@@ -1,0 +1,9 @@
+<h1 ng-if="$ctrl.myLength!=0" class="bg-info text-center"> Title: {{$ctrl.myTitle}} </h1>
+<ol>
+    <li ng-repeat="item in $ctrl.items">
+        {{item.quantity}} of {{item.name}}
+        <button class="btn btn-warning" ng-click="$ctrl.remove($index);">
+            Remove </button>
+    </li>
+</ol>
+<div class="bg-danger" ng-if="$ctrl.olegInList();">WARNING! Name detected!</div>

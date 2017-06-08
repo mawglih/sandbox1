@@ -1,0 +1,12 @@
+<h1>{{title}}</h1>
+<div class="row">
+    <ul class="nav navbar-nav">
+        <li ng-repeat="item in display.items">
+            <figure class="my-figure">
+                <img ng-src="{{item.path}}" alt="{{item.alt}}" class="img-fluid my-img-small">
+                <figcaption>{{item.alt}}</figcaption>
+                <button class="btn btn-xs btn-danger" ng-click="display.removeItem($index);"> Remove</button>
+            </figure>
+        </li>
+    </ul>
+</div>

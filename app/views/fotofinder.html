@@ -1,0 +1,25 @@
+<h1>{{title}}</h1>
+<div class="row">
+    <div class="col-md-6">
+        <div class="input-group">
+            <label for photourl>Provide url to photo</label>
+            <input type="text" ng-model="photo.path" class="form-control" id="photourl" placeholder="photo url">
+        </div>
+        <br>
+        <div class="input-group">
+            <label for photoname>Provide name for photo</label>
+            <input type="text" ng-model="photo.alter" class="form-control" placeholder="Photo name" id="photoname">
+        </div><br>
+        <div class="input-group">
+            <button ng-click="photo.addItem()" class="btn btn-success btn-lg">Add Photo</button>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <figure>
+            <img ng-src="{{photo.path}}" alt="{{photo.alt}}"><br>
+            <figcaption>{{photo.alter}}</figcaption>
+        </figure>
+
+    </div>
+
+</div>
